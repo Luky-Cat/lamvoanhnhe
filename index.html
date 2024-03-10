@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <title>Làm vợ anh nha </title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <a data-aos="zoom-out-down" class="box"> Wil you marry me ?</a>
+    
+<div class="button">
+   <div class="content">
+     <i class="yes"></i>
+     <span class="button-text">Yes</span>
+   </div>
+</div>
+<div  class="button-no" id="no">No!</div>
+<img style="width: 400px;" src="447266173c1a71da872660fe46fcfdba.gif">
+<div class="cat"><img style=" Background-position:left 0 ; width:300px" src="jdk2hofz14u71.gif"></div>
+<script>
+ const button = document.querySelector(".button");
+ button.addEventListener("click", () =>{
+   button.classList.add("active");
+   setTimeout(()=>{
+     button.classList.remove("active");
+     button.querySelector("i").classList.replace("yes", "bx-check-circle")
+     button.querySelector("span").innerText = " anh chở em đi ăn kem nà";
+   },6000);
+ }); 
+
+
+        const no = document.getElementById('no');
+        no.addEventListener('mouseover', () => {
+                        const x = Math.floor(Math.random() * (window.innerWidth - 70));
+            const y = Math.floor(Math.random() * (window.innerHeight - 70));
+            no.style.left = `${x}px`;
+            no.style.top = `${y}px`;
+        });
+
+</script>
+</body>
+</html>
